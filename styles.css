@@ -28,8 +28,6 @@ a{
 }
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
 }
 .container{
@@ -46,6 +44,7 @@ img {
   border-color: #ff8080;
   font-size: 25px;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 1px;
@@ -122,4 +121,23 @@ h2{
 }
 .text-box{
   background-color: #e6fff3#
+}
+.header{
+  height: 450px;
+  width: 100%;
+}
+h3{
+  color: #ff8080;
+  font-family: 'Raleway' , sans-serif;
+  font-weight:600;
+
+}
+.people-image{
+max-width: 280px;
+height: 400px;
+display: inline-block;
+}
+.people-container{
+  flex-direction:column;
+
 }
