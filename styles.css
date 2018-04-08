@@ -1,0 +1,125 @@
+h1{
+  background-color: #b3ffe6;
+  color: #ff8080;
+  font-family: 'Lobster',cursive;
+  font-size: 60px;
+  font-weight: 600;
+  width: 100%;
+  background-position: center;
+  text-align: center;
+}
+p{
+  color: #ff8080;
+  font-family: 'Raleway' , sans-serif;
+  text-align: center;
+
+}
+body{
+  background-color: #e6fff3;
+  background-blend-mode: lighten;
+}
+a{
+  color: #ff8080;
+  font-family: 'Lobster' , cursive;
+  font-weight: bolder;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 850px;
+  margin:auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.chapter{
+  background-color: #ffe6e6;
+  border-color: #ff8080;
+  font-size: 25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  width: 220px;
+  height: 180px;
+}
+.footer{
+  background-color: #b3ffe6;
+  font-weight: bold;
+  color: #ff8080;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  padding: 10px;
+}
+.SE{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%
+}
+.UK{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%
+}
+.ida{
+  width:200px;
+  height:270px;
+  display:flex;
+  margin-left: 80px;
+  margin-right: 10px;
+  margin-top: 100px;
+}
+h2{
+  color: #ff8080;
+  font-style:italic;
+  font-family: 'Lobster' , cursive;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.iconcred{
+  color: #ff8080;
+  font-size: 10px;
+  font-family: 'Lobster' , cursive;
+}
+.lobster{
+  color:#ff8080;
+  font-size: 25px;
+  font-family: 'Lobster' , cursive;
+}
+.icons{
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.insta{
+  width:50px;
+  height: 50px;
+}
+.outer_container{
+  /*flexbox*/
+  display: flex;
+  align-items: center;
+  margin-left: 900px;
+  margin-right: 100px;
+
+  /*styling*/
+  background-color: #e6fff3;
+}
+.text-box{
+  background-color: #e6fff3#
+}
