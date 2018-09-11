@@ -135,7 +135,6 @@ h3{
 
 }
 .people-image{
-max-width: 280px;
 height: 400px;
 display: inline-block;
 }
@@ -157,5 +156,9 @@ display: inline-block;
 }
 .style-visible-p {
   max-width: 280px;
-  display: inline-block;
+
+}
+
+.people-link-style {
+  max-width: 300px;
 }
