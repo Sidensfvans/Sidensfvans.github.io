@@ -155,3 +155,7 @@ display: inline-block;
 .hidden-p{
   display: none;
 }
+.style-visible-p {
+  max-width: 280px;
+  display: inline-block;
+}
