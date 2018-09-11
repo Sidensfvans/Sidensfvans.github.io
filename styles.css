@@ -27,7 +27,6 @@ a{
   align-items: center;
 }
 img {
-  display: block;
   width: 100%;
 }
 .container{
@@ -159,6 +158,14 @@ display: inline-block;
 
 }
 
-.people-link-style {
+.people-link-style,
+.people-link-style img
+{
   max-width: 300px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.people-link-style p {
+  text-align: left;
 }
