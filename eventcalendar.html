@@ -2,6 +2,8 @@
 <html lang="eng">
 <head>
 <link rel="stylesheet" href="./styles.css" type="text/css">
+<link rel="stylesheet" href="dist/styles/timetablejs.css">
+<script src="dist/scripts/timetable.js"></script>
 </head>
   <body>
 <img class="header" src="./images/IMG_0332.jpg"/>
@@ -12,13 +14,34 @@
 <p> Check out our event calendar below. If you can't find any events near you, you can always connect with us HERE.</p>
 <p> Or if you have questions related to employment or internship, send an e-mail to our People & Culture Manager Ida. </p>
 <h2> Event Calendar </h2>
-<div class="outer_container">
 
-  <link rel="stylesheet" href="dist/styles/timetablejs.css">
-  <script src="dist/scripts/timetable.js"></script>
   <div class="timetable"></div>
-  <script> var timetable = new Timetable();
-timetable.setScope(9, 17); // optional, only whole hours between 0 and 23 </script>
+
+  <div class="outer_container">
+
+
+  <script>
+    var timetable = new Timetable();
+
+    timetable.setScope(9,3)
+
+    timetable.addLocations(['Rotterdam', 'Madrid', 'Los Angeles', 'London', 'New York', 'Jakarta', 'Tokyo']);
+
+    timetable.addEvent('Sightseeing', 'Rotterdam', new Date(2015,7,17,9,00), new Date(2015,7,17,11,30), { url: '#' });
+    timetable.addEvent('Zumba', 'Madrid', new Date(2015,7,17,12), new Date(2015,7,17,13), { url: '#' });
+    timetable.addEvent('Zumbu', 'Madrid', new Date(2015,7,17,13,30), new Date(2015,7,17,15), { url: '#' });
+    timetable.addEvent('Lasergaming', 'London', new Date(2015,7,17,17,45), new Date(2015,7,17,19,30), { class: 'vip-only', data: { maxPlayers: 14, gameType: 'Capture the flag' } });
+    timetable.addEvent('All-you-can-eat grill', 'New York', new Date(2015,7,17,21), new Date(2015,7,18,1,30), { url: '#' });
+    timetable.addEvent('Hackathon', 'Tokyo', new Date(2015,7,17,11,30), new Date(2015,7,17,20)); // options attribute is not used for this event
+    timetable.addEvent('Tokyo Hackathon Livestream', 'Los Angeles', new Date(2015,7,17,12,30), new Date(2015,7,17,16,15)); // options attribute is not used for this event
+    timetable.addEvent('Lunch', 'Jakarta', new Date(2015,7,17,9,30), new Date(2015,7,17,11,45), { onClick: function(event) {
+      window.alert('You clicked on the ' + event.name + ' event in ' + event.location + '. This is an example of a click handler');
+    }});
+    timetable.addEvent('Cocktails', 'Rotterdam', new Date(2015,7,18,00,00), new Date(2015,7,18,02,00), { class: 'vip-only' });
+
+    var renderer = new Timetable.Renderer(timetable);
+    renderer.draw('.timetable');
+  </script>
 
   <div class="text-box">
     <p> Ida Bylund </p>
