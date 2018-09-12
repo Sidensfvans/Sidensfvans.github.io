@@ -31,8 +31,7 @@
     timetable.addEvent('Zumba', 'London', new Date(2015,7,17,12), new Date(2015,7,17,13), { url: '#' });
     timetable.addEvent('Zumbu', 'London', new Date(2015,7,17,13,30), new Date(2015,7,17,15), { url: '#' });
 
-      window.alert('You clicked on the ' + event.name + ' event in ' + event.location + '. This is an example of a click handler');
-    }});
+    
     timetable.addEvent('Cocktails', 'Stockholm', new Date(2015,7,18,00,00), new Date(2015,7,18,02,00), { class: 'vip-only' });
 
     var renderer = new Timetable.Renderer(timetable);
