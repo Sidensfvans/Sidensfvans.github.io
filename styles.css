@@ -175,9 +175,10 @@ display: inline-block;
 
 }
 
-.time-entry{
-  background-color: #e6fff3;
-
+.timetable .time-entry{
+  background-color: #b3ffe6!important;
+  border-color: #b3ffe6!important;
+  color: #ff8080;
 }
 
 .row-heading{
