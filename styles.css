@@ -178,7 +178,7 @@ display: inline-block;
 .timetable .time-entry{
   background-color: #b3ffe6!important;
   border-color: #b3ffe6!important;
-  color: #ff8080;
+  color: #ff8080!important;
 }
 
 .row-heading{
